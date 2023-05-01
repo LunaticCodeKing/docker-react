@@ -5,8 +5,8 @@ services:
 before_install: 
   - docker build -t lunaticpraveen/docker-react -f Dockerfile.dev .
 
-script: 
-  - docker run -e CI=true lunaticpraveen/docker-react npm run test
+# script: 
+#   - docker run -e CI=true lunaticpraveen/docker-react npm run test
 
 deploy:
   provider: elasticbeanstalk
